@@ -1,0 +1,16 @@
+create table department(dno integer(5) primary key,dname varchar(20) unique,dept varchar(20),location varchar(15));
+create table employee(dnum integer(5) primary key,empname varchar(20) not null,address varchar(20),email varchar(20));
+
+insert into department (dno,dname,dept,location) values 
+(1,'fasil','mca','koppam'),
+(2,'selva','mca','valanchery'),
+(3,'aparna','bca','pattambi'),
+(4,'varun','mba','cherpulasseri'),
+(5,'amal','bba','perinthalmanna');
+
+insert into employee (dnum,empname,address,email) values 
+(1,'fasil','koppam','fasil@gmail.com'),
+(2,'selva','valanchery','selva@gmail.com'),
+(3,'aparna','pattambi','aparna@gmail.com'),
+(4,'varun','cherpulasseri','varun@gmail.com'),
+(5,'amal','perinthalmanna','amal@gmail.com');
