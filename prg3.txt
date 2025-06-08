@@ -1,0 +1,29 @@
+create database company;
+use company;
+create table employee(id integer(5) primary key,name varchar(20) not null,address varchar(50),salary integer(6),department varchar(20));
+insert into employee (id,name,address,salary,department) values
+    (1,'Fasil','Pattambi',98000,'Backend'),
+    (2,'Aparna','pattambi',50000,'Frontend'),
+    (3,'Selva','Valanchery',78000,'Network'),
+    (4,'Arjun','Palakkad',48000,'HR'),
+    (5,'Huda','Ponnani',36000,'Designing'),
+    (6,'Fahiz','Malappuram',74000,'Accounting'),
+    (7,'Varun','Valanchery',66000,'Backend'),
+    (8,'Amal','kochi',45000,'Accounting'),
+    (9,'Haneena','Trissur',55000,'Frontend'),
+    (10,'Irshad','Pattambi',19000,'Designing');
+select * from employee;
+select * from employee where salary > 25000;
+select name from employee where name like 'A%';
+alter table employee add column location varchar(20);
+update employee set location='Palakkad' where id=1;
+update employee set location='Palakkad' where id=2;
+.
+.
+.
+select * from employee;
+delete from employee where name='Arjun';
+select * from employee; 
+select max(salary) from employee;
+select min(salary) from employee;
+select * from employee order by name desc;
