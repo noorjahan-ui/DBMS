@@ -1,0 +1,6 @@
+create table student(name varchar(20),class varchar(20),age int,address archar(20),marks float);
+insert into student values('noora','s2-a',22,'palakkad',89.9)
+
+insert into student values('noora','MCA',21,'valanchery',97),('dilu','MCA',24,'pattambi',97),('nijiya','MCA',22,'Ponnani',97),('thesmiya','MCA',23,'ponnani',97);
+create view info as select name,mark from student;
+select * from info;
