@@ -1,0 +1,22 @@
+create database company;
+use company;
+create table employee(id integer(5) primary key,name varchar(20) not null,address varchar(50),salary integer(6),department varchar(20));
+ insert into employee (id,name,address,salary,department) values
+         (1,'Fasil','Pattambi',98000,'Backend'),
+         (2,'Aparna','pattambi',50000,'Frontend'),
+         (3,'Selva','Valanchery',78000,'Network'),
+         (4,'Arjun','Palakkad',48000,'HR'),
+         (5,'Huda','Ponnani',36000,'Designing');
+create table manager(id integer(5) primary key,name varchar(20) not null,address varchar(50),salary integer(6),department varchar(20));
+insert into manager (id,name,address,salary,department) values
+     	(1,'Fasil','Pattambi',98000,'Backend'),
+     	(2,'Aparna','pattambi',50000,'Frontend'),
+    	(8,'Amal','kochi',45000,'Accounting'),
+        (9,'Haneena','Trissur',55000,'Frontend'),
+        (10,'Irshad','Pattambi',19000,'Designing');
+
+select * from employee union select * from manager;
+select * from employee;
+select * from manager;
+select * from employee except select * from manager;
+select * from employee intersect select * from manager;
